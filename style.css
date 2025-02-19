@@ -1,0 +1,454 @@
+body {
+    font-family: 'Merriweather', serif; 
+    background-color: #f0ede7; 
+    color: #608BC1;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+header {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color:#608BC1;
+}
+
+p {
+    color: #555;
+}
+.menu {
+    background-color: #608BC1;
+    color: #F3F3E0;
+    padding: 15px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+}
+
+.menu-tt {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #F3F3E0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-nv {
+    display: flex;
+    align-items: center; 
+}
+
+.menu-nv ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-nv .nv-item {
+    margin: 0 15px; 
+}
+
+.menu-nv .nv-link {
+    color: #F3F3E0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s; 
+}
+
+.menu-nv .nv-link:hover {
+    color: #ddd; 
+
+}
+
+button {
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #133E87;
+}
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #f0ede7;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    width: 90%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #608BC1; 
+    color: #F3F3E0;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #608BC1; 
+}
+
+.noti {
+    display: none; 
+    background-color: #d4edda;
+    color: #3498db;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #50b9ff;
+    border-radius: 5px;
+}
+
+#overview {
+    padding: 20px;
+    text-align: center;
+}
+
+.table, .grid-gallery, .form-section {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #CBDCEB;
+    border-radius: 10px;
+}
+
+.table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table caption {
+    background-color: #608BC1;
+    color: #555 ;
+    font-weight: bold;
+    caption-side: top;
+    font-size: 1.5rem;
+    padding: 10px; /* Adds padding for better appearance */
+    width: 100%; /* Ensures it spans the full table width */
+    text-align: center; /* Centers the text */
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+    border-radius: 10px 10px 0 0;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.table td {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+/* Header Section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #608BC1;
+    color: #F3F3E0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #F3F3E0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #CBDCEB;
+}
+
+/* Main Section */
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.text {
+    max-width: 400px;
+}
+
+.text h1 {
+    font-size: 2rem;
+    color: #608BC1;
+    margin-bottom: 10px;
+}
+
+.section text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img:hover {
+    opacity: 0.8;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.hero {
+    height: 100vh;
+    background-color: #bbe2f3;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #608BC1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #bbe2f3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #608BC1;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    border: 2px solid #608BC1;
+    color: #608BC1;
+    background-color: transparent;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #608BC1;
+    color: #e7eef0;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+}
+
+.about {
+    background-color: #d4d8d9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #608BC1;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #8e999b;
+}
+
+body, h1, h2, p, a, button{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center; /* Center the cards */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Wrap items neatly to the next line */
+    padding: 20px;
+    gap: 20px; /* Add consistent spacing between cards */
+  }
+  
+  .project-card {
+    background-color: #CBDCEB;
+    width: 28%; /* Increase the width of cards slightly */
+    margin: 0; /* Remove individual margins, use gap instead */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly darker shadow for depth */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align content */
+    text-align: center; /* Center the text inside the card */
+  }
+  
+  .project-card img {
+    width: 150px; /* Make images larger */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 15px;
+  }
+  
+  .project-card h3 {
+    font-size: 1.4rem; /* Slightly larger font for headings */
+    margin-bottom: 10px;
+    color: #608BC1; /* Darker font color for better readability */
+  }
+  
+  .project-card p {
+    font-size: 0.9rem; /* Larger font for better readability */
+    line-height: 1.4;
+    color: #555; /* Neutral text color */
+  }
+  
+  .project-card strong {
+    color: #474747;
+    font-weight: bold;
+  }
+
+.footer p {
+ color: #CBDCEB;
+}
+
+.footer h2 {
+    font-size: 1.8rem;
+    color: #133E87;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:-80px;
+    margin-right: -80px;
+    overflow: hidden;
+    padding: 15px 0;
+    background-color: #004b73; 
+}

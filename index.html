@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="menu">
+            <h1 class="menu-tt">My Portfolio</h1>
+            <button class="menu-toggle" id="menuToggle">Menu</button>
+            <nav id="menu" class="menu-nv">
+                <ul>
+                    <li class="nv-item"><a class="nv-link" href="#about">About</a></li>
+                    <li class="nv-item"><a class="nv-link" href="#education">Education</a></li>
+                    <li class="nv-item"><a class="nv-link" href="#experience">Experience</Figure></a></li>
+                    <li class="nv-item"><a class="nv-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    
+        <section class="intro">
+                <div class="text">
+                    <h1>Welcome to My Portfolio!</h1>
+                    <p>This website is built to inform the necessary information about my experience, 
+                    which I believe clearly expresses my unique impression to employers.</p>
+                </div>
+                <div class="images">
+                    <div class="image-box"><img src="anh1.JPG" alt="Profile 1"></div>
+                    <div class="image-box"><img src="anh2.JPG" alt="Profile 2"></div>
+                    <div class="image-box"><img src="anh3.JPG" alt="Profile 3"></div>
+                </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <table class="table">
+                <caption>Student majoring in Multimedia, wishing to learn and cultivate practice</caption>
+                <tr><td>Basic information</td><td>Date of Birth: August 17th,2004 <br>Email: dieuanhnh@gmail.com<br>Phone: 0912346789<br>Address: Nam Từ Liêm, Hà Nội</td></tr>
+                <tr><td>Hobbies</td><td>Drawing<br>Reading comic books<br>Researching about psychology</td></tr>
+                <tr><td>Skills</td><td>Multimedia: Adobe Photoshop, Adobe Illustrator, Maya <br>Language: English level C2</td></tr>
+            </table>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Hanoi University</strong> - <strong>Bachelor Degree in Multimedia</strong> - Good at 4 English skills (Listening, Reading, Writting, Speaking), ability to use 2D and 3D design tools, communication plan creation skills.
+            <br><strong>Thai Binh Gifted Highschool</strong> - <strong>Literature Class</strong> - Good at writting, reading documents, collecting information, and communication, solving problem skills.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p><strong>Event</strong><br>There are my certificates for participanting in two outdoor events as a volunteer.</p>
+            <section id="projects">
+                <div class="projects-container">
+                    <div class="project-card">
+                        <img src="cer1.jpg" alt="Certificates">
+                        <p><strong>Hanoi Baseball Major Series 2023</strong></p>
+                        <br>
+                        <img src="cer2.jpg" alt="Certificates">
+                        <p><strong>Lễ hội Quà tặng Du lịch Hà Nội 2023</strong></p>
+                    <h3>Certificate</h3>
+                    </div>
+                </div>
+            </section>
+            <p><strong>Designing</strong><br>Although I do not have much practical work experience, the following outstanding projects that I have carried out are highly appreciated during my studies and training at school.</p>
+            <section id="projects">
+                <div class="projects-container">
+                  <!-- Project 1 -->
+                  <div class="project-card">
+                    <img src="1.png" alt="Brochure">
+                    <img src="2.png" alt="Brochure">
+                    <h3>Brochure</h3>
+                    <p>This is a brochure to promote my school's Korean language department. It was designed using a combination of <strong>Adobe Illustrator</strong> and <sttrong>Adobe Photoshop</sttrong> software</p>
+                  </div>
+            </section>
+            <section id="projects">
+                <div class="projects-container">
+                  <div class="project-card">
+                    <img src="3.png" alt="Catalog">
+                    <img src="4.png" alt="Catalog">
+                    <h3>Catalog</h3>
+                    <p>These are 4 pages of the catalog introducing the Vietnamese traditional performing art of Water Puppet. It is the final product of my Graphic Design course with my team. <strong>Adobe Photoshop</strong> is fully utilized to create this product.</p>
+                  </div>
+                </div>
+            </section>
+            <section>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <img src="5.png" alt="illustrations">
+                        <h3>Set of Illustrations</h3>
+                        <p>This is a set of illustrations in the same Water Puppet project. 3 consecutive photos show 3 typical performances of Water Puppet performance art supporting the main poster of our project.</p>
+                      </div>
+                </div>
+            </section>
+        </section>
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+        <script src="function.js"></script>
+
+        <footer>
+            <main class="container">
+                <h2>Contact Me</h2>
+                <p>It is my honnor to be able to have your contact! Please fill out the form below.</p>
+                <form id="contact">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <textarea type="text" id="name" class="form-control" placeholder="Enter your name" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <textarea type="email" id="email" class="form-control" placeholder="Enter your email" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="4" placeholder="Enter the message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <div id="notification" class="noti">
+                    Thank you!
+                </div>
+            </main>
+        
+            <p>NGUYỄN HOÀNG DIỆU ANH</p>
+            <p>&copy; 2025 My Portfolio</p>
+            </footer>
+    
+    </body>
+
